@@ -16,7 +16,11 @@ public class Hero extends Mover {
         gravity = 9.8;
         acc = 0.6;
         drag = 0.8;
-        setImage("p1.png");
+        setImage("p3_front.png");
+        GreenfootImage myImage = getImage();
+        int myNewHeigth = (int) myImage.getHeight()*3/4;
+        int myNewWidth = (int)myImage.getWidth()*3/4;
+        myImage.scale(myNewWidth, myNewHeigth);
     }
 
     @Override
@@ -28,6 +32,7 @@ public class Hero extends Mover {
         if (velocityY > gravity) {
             velocityY = gravity;
         }
+       
         applyVelocity();
 
         for (Actor enemy : getIntersectingObjects(Enemy.class)) {
@@ -35,26 +40,36 @@ public class Hero extends Mover {
                 getWorld().removeObject(this);
                 break;
             }
+        
         }
+        
+        
     }
-
+   
+        
+    boolean onGround()
+    {
+        Actor under = getOneObjectAtOffset(0, getImage().getHeight()/2, Tile.class);
+        return under != null;
+    }
+        
     public void handleInput() {
-        if (Greenfoot.isKeyDown("w")) {
-            velocityY = -10;
+        if ((Greenfoot.isKeyDown("up"))&&(onGround()== true)) {
+            velocityY = -15;
         }
 
-        if (Greenfoot.isKeyDown("a")) {
-            velocityX = -2;
-        } else if (Greenfoot.isKeyDown("d")) {
-            velocityX = 2;
+        if (Greenfoot.isKeyDown("left")) {
+            velocityX = -4;
+        } else if (Greenfoot.isKeyDown("right")) {
+            velocityX = 4;
         }
     }
 
     public int getWidth() {
-        return getImage().getWidth();
+        return getImage().getWidth() - 40;
     }
 
     public int getHeight() {
-        return getImage().getHeight();
+        return getImage().getHeight() - 40;
     }
 }
