@@ -62,7 +62,13 @@ public class Mover extends Actor {
         this.worldX = x;
         this.worldY = y;
     }
-
+    public void act()
+    {
+        Actor goudenmunt = getOneIntersectingObject(GoudenMunt.class);
+        if (goudenmunt != null) {
+            getWorld().removeObject(goudenmunt);
+        }
+    }    
     @Override
     public int getX() {
         return this.worldX;

@@ -38,9 +38,18 @@ public class Hero extends Mover {
         for (Actor enemy : getIntersectingObjects(Enemy.class)) {
             if (enemy != null) {
                 getWorld().removeObject(this);
-                break;
+                return;
             }
         
+        }
+        Actor goudenmunt = getOneIntersectingObject(GoudenMunt.class);
+        if(goudenmunt != null) {
+            getWorld().removeObject(goudenmunt);
+            
+            MyWorld world = (MyWorld)getWorld();
+            world.updateScore();
+            
+  
         }
         
         

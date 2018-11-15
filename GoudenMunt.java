@@ -44,9 +44,6 @@ public class GoudenMunt extends Verzamelobject
             speed *= -1;
             x = xMin;
         }
-        Verzamelobject GoudenMunt = getOneIntersectingObject(GoudenMunt.class);
-        if( GoudenMunt != null) {
-            getWorld().removeObject(GoudenMunt);
-        }
+        
     }    
 }
