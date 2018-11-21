@@ -13,6 +13,8 @@ public class Hero extends Mover {
     private final double drag;
     GreenfootImage[] images = new GreenfootImage[11];
     int imageNumber;
+    public static int HudSter = 0;
+    Scoreboard sb;
     
     
     
@@ -64,7 +66,7 @@ public class Hero extends Mover {
         }    
         Actor goudenmunt = getOneIntersectingObject(GoudenMunt.class);
         if(goudenmunt != null) {
-            HudSter.hudSter=1;
+            
             getWorld().removeObject(goudenmunt);
             
             MyWorld world = (MyWorld)getWorld();

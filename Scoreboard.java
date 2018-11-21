@@ -6,30 +6,19 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Scoreboard extends Hud
+public class Scoreboard extends Actor
 {
+    private int xPositie = 30;
     private int score = 0;
-    int xPositie = 25;
     
-    
-    public Scoreboard()
+    public void act()
     {
-        GreenfootImage img = new GreenfootImage(100, 30);
-        img.drawString("     :     " + score, 5, xPositie);
-        setImage(img);
     }
-   
-    public void changeScore() 
+    public void updateScoreStar()
     {
-        score = score + 1;
-        GreenfootImage img = getImage();
-        img.clear();
-        img.drawString("  :        " + score, 5, xPositie); 
-    }    
-    public void updateScore()
-    {
-        getWorld().addObject(new Coin(), xPositie, 100);
-        xPositie += 50;
-        
+        score ++;
+        getWorld().addObject(new Coin(), xPositie, 150);
+        xPositie += 20;
+    }
 }
-}
+    

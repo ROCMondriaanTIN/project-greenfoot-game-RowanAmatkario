@@ -96,7 +96,6 @@ public class MyWorld extends World {
      */
     private void prepare()
     {
-        HudSter hudSter = new HudSter();
-        addObject(hudSter,106,35);
+        
     }
 }
