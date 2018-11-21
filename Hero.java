@@ -20,7 +20,7 @@ public class Hero extends Mover {
         super();
         gravity = 9.8;
         acc = 0.6;
-        drag = 0.8;
+        drag = 0.6;
         setImage("p3_stand.png");
         GreenfootImage myImage = getImage();
         int myNewHeigth = (int) myImage.getHeight()*3/4;
@@ -52,6 +52,7 @@ public class Hero extends Mover {
         for (Actor water : getIntersectingObjects(Water.class)){
             if ( water != null) {
                 getWorld().removeObject(this);
+                Greenfoot.setWorld(new MyWorld());
                 return;
             }
         }
@@ -63,10 +64,11 @@ public class Hero extends Mover {
         }    
         Actor goudenmunt = getOneIntersectingObject(GoudenMunt.class);
         if(goudenmunt != null) {
+            HudSter.hudSter=1;
             getWorld().removeObject(goudenmunt);
             
             MyWorld world = (MyWorld)getWorld();
-            world.updateScore();
+           
         }
        
         
@@ -107,4 +109,5 @@ public class Hero extends Mover {
     public int getHeight() {
         return getImage().getHeight() - 40;
     }
+    
 }

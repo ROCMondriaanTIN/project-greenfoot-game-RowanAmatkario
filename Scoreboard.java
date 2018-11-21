@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Scoreboard extends Actor
+public class Scoreboard extends Hud
 {
     private int score = 0;
     int xPositie = 25;
@@ -24,6 +24,12 @@ public class Scoreboard extends Actor
         score = score + 1;
         GreenfootImage img = getImage();
         img.clear();
-        img.drawString("  :        " + score, 5, 25); 
+        img.drawString("  :        " + score, 5, xPositie); 
     }    
+    public void updateScore()
+    {
+        getWorld().addObject(new Coin(), xPositie, 100);
+        xPositie += 50;
+        
+}
 }
