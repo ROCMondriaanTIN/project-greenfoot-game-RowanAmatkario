@@ -17,7 +17,7 @@ public class GoudenMunt extends Verzamelobject
     public GoudenMunt()
     {
         super();
-        setImage("hud_coins.png");
+        setImage("star.png");
         firstAct = true;
     }
        

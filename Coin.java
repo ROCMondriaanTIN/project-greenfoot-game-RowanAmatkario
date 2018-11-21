@@ -18,6 +18,6 @@ public class Coin extends Hud
     }    
     public Coin()
     {
-        setImage("hud_coins.png");
+        setImage("star.png");
     }
 }

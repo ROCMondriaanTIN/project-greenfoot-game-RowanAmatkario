@@ -9,11 +9,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Scoreboard extends Actor
 {
     private int score = 0;
+    int xPositie = 25;
+    
     
     public Scoreboard()
     {
         GreenfootImage img = new GreenfootImage(100, 30);
-        img.drawString("Score :" + score, 5, 25);
+        img.drawString("     :     " + score, 5, xPositie);
         setImage(img);
     }
    
@@ -22,6 +24,6 @@ public class Scoreboard extends Actor
         score = score + 1;
         GreenfootImage img = getImage();
         img.clear();
-        img.drawString("Score : " + score, 5, 25); 
+        img.drawString("  :        " + score, 5, 25); 
     }    
 }

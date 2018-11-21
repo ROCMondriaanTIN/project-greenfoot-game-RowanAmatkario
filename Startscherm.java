@@ -25,15 +25,11 @@ public class Startscherm extends World
         TitleLetters titleletters = new TitleLetters();
         addObject(titleletters, 400, 300);
     }
-    private void prepare1()
-    {
-        TittleLetter2 titletters2 = new TittleLetter2();
-        addObject(titletters2, 400,300);
-    }
     public void act()
     {
         if (Greenfoot.isKeyDown("enter"))
         Greenfoot.setWorld(new MyWorld());
     }
+    
     
 }

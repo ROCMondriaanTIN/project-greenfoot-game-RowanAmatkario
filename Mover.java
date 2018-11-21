@@ -68,7 +68,12 @@ public class Mover extends Actor {
         if (goudenmunt != null) {
             getWorld().removeObject(goudenmunt);
         }
+        Actor Sleutels = getOneIntersectingObject(Sleutels.class);
+        if (Sleutels != null) {
+            getWorld().removeObject(Sleutels);
+        }
     }    
+    
     @Override
     public int getX() {
         return this.worldX;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.2" tiledversion="1.2.0" name="world" tilewidth="70" tileheight="70" tilecount="15" columns="0">
+<tileset version="1.2" tiledversion="1.2.1" name="world" tilewidth="70" tileheight="70" tilecount="19" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="70" height="70" source="../images/box.png"/>
@@ -45,5 +45,17 @@
  </tile>
  <tile id="14">
   <image width="70" height="70" source="../images/signRight.png"/>
+ </tile>
+ <tile id="15">
+  <image width="44" height="40" source="../images/hud_keyRed.png"/>
+ </tile>
+ <tile id="16">
+  <image width="70" height="70" source="../images/liquidLava.png"/>
+ </tile>
+ <tile id="17">
+  <image width="70" height="70" source="../images/liquidLavaTop.png"/>
+ </tile>
+ <tile id="18">
+  <image width="70" height="70" source="../images/liquidLavaTop_mid.png"/>
  </tile>
 </tileset>
