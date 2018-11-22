@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Water extends Tile
 {
+    game_over1 game_over1 = new game_over1();
     private int xMin;
     private int xMax;
     private boolean firstAct;
@@ -29,6 +30,11 @@ public class Water extends Tile
      */
     public void act() 
     {
-        // Add your action code here.
+        Actor a = this.getOneIntersectingObject (Hero.class);
+        if (a != null) {
+            this.getWorld().removeObject(a);
+            this.getWorld().addObject(game_over1, 500,400);
+        
+    }
     }    
 }

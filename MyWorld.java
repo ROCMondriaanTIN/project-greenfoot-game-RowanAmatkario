@@ -64,10 +64,10 @@ public class MyWorld extends World {
         addObject(camera, 0, 0);
         addObject(hero, 175, 650);
         addObject(new Enemy(), 599, 1130);
-        addObject(new Enemy(), 775, 303);
-        addObject(new Key(false), 31, 108);
+        //addObject(new Enemy(), 775, 303);
         addObject(new Key(false), 1180, 1153);
-        addObject(new Diamand(), 900, 39);
+        addObject(new Diamand(false), 1536, 1093);
+        addObject(new Diamand(false), 1700, 1093);
         addObject(new Star(false), 600, 1100);
         addObject(new Star(false), 800, 1100);
         addObject(new Star(false), 1000, 900);

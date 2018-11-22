@@ -75,13 +75,21 @@ public class Hero extends Mover {
             sb.updateScoreStar();
             MyWorld world = (MyWorld)getWorld(); 
         } 
-        Actor Key = getOneIntersectingObject(Key.class);
-        if(Key != null) {
-            getWorld().removeObject(Key);
-            sb.updateScoreKey();
-            MyWorld world = (MyWorld)getWorld();
-        }
+   
+        Actor Key = getOneIntersectingObject(Key.class); 
 
+        if(Key != null) { 
+            getWorld().removeObject(Key); 
+            sb.updateScoreKey();
+            MyWorld world = (MyWorld)getWorld(); 
+        } 
+        Actor Diamand = getOneIntersectingObject(Diamand.class); 
+
+        if(Diamand != null) { 
+            getWorld().removeObject(Diamand); 
+            sb.updateScoreDiamand();
+            MyWorld world = (MyWorld)getWorld(); 
+        } 
     }
     public void animation()
     {
