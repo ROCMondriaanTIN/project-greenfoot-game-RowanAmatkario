@@ -65,19 +65,18 @@ public class MyWorld extends World {
         addObject(hero, 175, 650);
         addObject(new Enemy(), 599, 1130);
         addObject(new Enemy(), 775, 303);
-        addObject(new GoudenMunt(), 1234, 673);
-        addObject(new Coin(), 30, 30);
-        addObject(new GoudenMunt(), 528, 1108);
-        addObject(new GoudenMunt(), 933, 850);
-        addObject(new Key(), 30, 89);
+        addObject(new Key(false), 31, 108);
+        addObject(new Key(false), 1180, 1153);
         addObject(new Diamand(), 900, 39);
-
+        addObject(new Star(false), 600, 1100);
+        addObject(new Star(false), 800, 1100);
+        addObject(new Star(false), 1000, 900);
         // Initialiseren van de CollisionEngine zodat de speler niet door de tile heen kan lopen.
         // De collision engine kijkt alleen naar de tiles die de variabele solid op true hebben staan.
         ce = new CollisionEngine(te, camera);
         // Toevoegen van de mover instantie of een extentie hiervan
         ce.addCollidingMover(hero);
-        prepare();
+        
     }
 
     @Override
@@ -94,8 +93,6 @@ public class MyWorld extends World {
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
      */
-    private void prepare()
-    {
-        
-    }
+   
+  
 }

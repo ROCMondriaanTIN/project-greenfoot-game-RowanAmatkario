@@ -41,7 +41,11 @@ public class Hero extends Mover {
         if (velocityY > gravity) {
             velocityY = gravity;
         }
-       
+        if (sb == null){
+            sb = new Scoreboard();
+            getWorld().addObject(sb, -10, -10);
+        }
+        
         applyVelocity();
 
         for (Actor enemy : getIntersectingObjects(Enemy.class)) {
@@ -63,24 +67,28 @@ public class Hero extends Mover {
                 getWorld().removeObject(this);
                 return;
             }
-        }    
-        Actor goudenmunt = getOneIntersectingObject(GoudenMunt.class);
-        if(goudenmunt != null) {
-            
-            getWorld().removeObject(goudenmunt);
-            
+        }  
+        Actor Star = getOneIntersectingObject(Star.class); 
+
+        if(Star != null) { 
+            getWorld().removeObject(Star); 
+            sb.updateScoreStar();
+            MyWorld world = (MyWorld)getWorld(); 
+        } 
+        Actor Key = getOneIntersectingObject(Key.class);
+        if(Key != null) {
+            getWorld().removeObject(Key);
+            sb.updateScoreKey();
             MyWorld world = (MyWorld)getWorld();
-           
         }
-       
-        
+
     }
     public void animation()
     {
         imageNumber = ( imageNumber + 1 ) % images.length;
         setImage( images[imageNumber] );
     }  
-    boolean onGround()
+    public boolean onGround()
     {
         Actor under = getOneObjectAtOffset(0, getImage().getHeight()/2, Tile.class);
         return under != null;

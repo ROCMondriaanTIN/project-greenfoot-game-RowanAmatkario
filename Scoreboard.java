@@ -13,12 +13,19 @@ public class Scoreboard extends Actor
     
     public void act()
     {
+        
     }
     public void updateScoreStar()
     {
         score ++;
-        getWorld().addObject(new Coin(), xPositie, 150);
-        xPositie += 20;
+        getWorld().addObject(new Star(true), xPositie, 50);
+        xPositie += 40;
+    }
+    public void updateScoreKey()
+    {
+        score ++;
+        getWorld().addObject(new Key(true), xPositie, 100);
+        xPositie += 40;
     }
 }
     

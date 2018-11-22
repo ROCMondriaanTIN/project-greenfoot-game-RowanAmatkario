@@ -8,12 +8,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Key extends Hud
 {
+    public boolean isGepakt;
     /**
      * Act - do whatever the Key wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Key()
+    public Key(boolean isGepakt)
     {
-        setImage("hud_keyRed.png");
+        this.isGepakt = isGepakt;
     }  
+    public void act() 
+    {
+        if (isGepakt == false)
+        {
+        applyVelocity();
+    }
+    }    
 }
