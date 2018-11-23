@@ -10,7 +10,7 @@ public class Scoreboard extends Actor
 {
     private int xPositieStar = 30;
     private int xPositieKey = 30;
-    private int xPositieDiamand = 1000000;
+    private int xPositieDiamand = 945;
     private int score = 0;
     
     public void act()
@@ -32,8 +32,8 @@ public class Scoreboard extends Actor
     public void updateScoreDiamand()
     {
         score ++;
-        getWorld().addObject(new Diamand(true), xPositieKey,50);
-        xPositieKey -= 55;
+        getWorld().addObject(new Diamand(true), xPositieDiamand,50);
+        xPositieDiamand -= 55;
     }
     
 }

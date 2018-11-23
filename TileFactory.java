@@ -135,6 +135,13 @@ public class TileFactory {
                 tile = new Tile("hud_coins.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);      
                 tile.isSolid = true;
                 break;
+          case 20:
+                tile = new Tile("door_closedMid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);      
+                break;   
+          case 21:
+                tile = new Tile("door_closedTop.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);      
+                tile.isSolid = true;
+                break;
         
    
             default:
