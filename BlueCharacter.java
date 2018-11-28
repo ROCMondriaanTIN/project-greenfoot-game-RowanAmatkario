@@ -6,28 +6,24 @@ import greenfoot.*;
  *
  * @author R. Springer
  */
-public class Hero extends Mover {
+public class BlueCharacter extends Mover {
 
     private final double gravity;
     private final double acc;
     private final double drag;
-    private int charStatus = 1;
     GreenfootImage[] images = new GreenfootImage[11];
     int imageNumber;
     public static int HudSter = 0;
-    
-  
-    
     Scoreboard sb;
     
     
     
-    public Hero() {
+    public BlueCharacter() {
         super();
         gravity = 9.8;
         acc = 0.6;
         drag = 0.6;
-        setImage("p3_stand.png");
+        setImage("p2_stand.png");
         GreenfootImage myImage = getImage();
         int myNewHeigth = (int) myImage.getHeight()*3/4;
         int myNewWidth = (int)myImage.getWidth()*3/4;
@@ -35,12 +31,10 @@ public class Hero extends Mover {
         for( int i=0; i<images.length; i++ ) images[i] = new GreenfootImage( "p3_walk" + (i+1) + ".png" );
         setImage( images[imageNumber] );
     }
-    public int charCoin;
+
     @Override
     public void act() {
         handleInput();
-        charSwitch();
-        
         
         velocityX *= drag;
         velocityY += acc;
@@ -95,20 +89,9 @@ public class Hero extends Mover {
             getWorld().removeObject(Diamand); 
             sb.updateScoreDiamand();
             MyWorld world = (MyWorld)getWorld(); 
-        } 
-        Actor BlueCoin= getOneIntersectingObject(BlueCoin.class); 
-
-        if(BlueCoin != null) { 
-            getWorld().removeObject(BlueCoin); 
-            sb.updateScoreBlueCoin();
-            MyWorld world = (MyWorld)getWorld(); 
-            charCoin ++;
-            charStatus = 2;
-            
+            setImage(new GreenfootImage("p2_stand.png"));
         } 
     }
-        
-    
     public void animation()
     {
         imageNumber = ( imageNumber + 1 ) % images.length;
@@ -145,16 +128,5 @@ public class Hero extends Mover {
     public int getHeight() {
         return getImage().getHeight() - 40;
     }
-    public void charSwitch(){
-        switch (charStatus) {
-            case 1: setImage("p1_stand.png");
-                    break;
-            case 2: setImage("p2_stand.png");
-                    break;
-            case 3: setImage("p3_stand.png");
-                    break;
-    }
-    }
-            
     
 }

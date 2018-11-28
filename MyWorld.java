@@ -65,6 +65,7 @@ public class MyWorld extends World {
         addObject(hero, 175, 650);
         addObject(new Enemy(), 599, 1130);
         addObject(new Pokermad(), 2102, 900);
+        addObject(new BlueCoin(false), 800, 1100);
         addObject(new Key(false), 1180, 1153);
         addObject(new ClosedDoorMid(),2800, 1290);
         addObject(new ClosedDoorTop(), 2800, 1240);
@@ -74,7 +75,7 @@ public class MyWorld extends World {
         addObject(new Star(false), 600, 1100);
         addObject(new Star(false), 800, 1100);
         addObject(new Star(false), 1000, 900);
-        
+        setPaintOrder(Hero.class);
         // Initialiseren van de CollisionEngine zodat de speler niet door de tile heen kan lopen.
         // De collision engine kijkt alleen naar de tiles die de variabele solid op true hebben staan.
         ce = new CollisionEngine(te, camera);
