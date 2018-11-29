@@ -104,8 +104,23 @@ public class Hero extends Mover {
             MyWorld world = (MyWorld)getWorld(); 
             charCoin ++;
             charStatus = 2;
-            
         } 
+        Actor PinkCoin = getOneIntersectingObject(PinkCoin.class);
+        if(PinkCoin != null) { 
+            getWorld().removeObject(PinkCoin); 
+            sb.updateScorePinkCoin();
+            MyWorld world = (MyWorld)getWorld(); 
+            charCoin ++;
+            charStatus = 3;
+        }
+        Actor GreenCoin = getOneIntersectingObject(GreenCoin.class);
+        if(GreenCoin != null) { 
+            getWorld().removeObject(GreenCoin); 
+            sb.updateScoreGreenCoin();
+            MyWorld world = (MyWorld)getWorld(); 
+            charCoin ++;
+            charStatus = 1;
+        }
     }
         
     

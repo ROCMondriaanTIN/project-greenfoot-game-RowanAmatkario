@@ -5,16 +5,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  *
  * @author R. Springer
  */
-public class MyWorld extends World {
+public class LevelTwee extends World {
 
     private CollisionEngine ce;
     private Scoreboard sb;
     game_over1 game_over1 = new game_over1();
     /**
-     * Constructor for objects of class MyWorld.
+     * Constructor for objects of class LevelTwee.
      *
      */
-    public MyWorld() {
+    public LevelTwee() {
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 800, 1, false);
         this.setBackground("maxresdefault.jpg");
