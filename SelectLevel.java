@@ -24,14 +24,7 @@ public class SelectLevel extends World
     {
         TitleLetterLevel titleletterlevel = new TitleLetterLevel();
         addObject(titleletterlevel, 716, 357);
-        TitleLevelEen titleleveleen = new TitleLevelEen();
-        TitleLevelTwee titleleveltwee = new TitleLevelTwee();
-        TitleLevelDrie titleleveldrie = new TitleLevelDrie();
-        TitleLevelVier titlelevelvier = new TitleLevelVier();
-        addObject(titleleveleen, 172, 364);
-        addObject(titleleveltwee, 410, 364);
-        addObject(titleleveldrie, 638, 364);
-        addObject(titlelevelvier, 879 , 364);
+      
     }
     public void act()
     {

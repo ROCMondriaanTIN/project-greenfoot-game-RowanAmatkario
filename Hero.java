@@ -80,6 +80,7 @@ public class Hero extends Mover {
             getWorld().removeObject(Star); 
             sb.updateScoreStar();
             MyWorld world = (MyWorld)getWorld(); 
+            
         } 
    
         Actor Key = getOneIntersectingObject(Key.class); 
