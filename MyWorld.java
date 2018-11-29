@@ -77,6 +77,7 @@ public class MyWorld extends World {
         addObject(new Star(false), 600, 1100);
         addObject(new Star(false), 800, 1100);
         addObject(new Star(false), 1000, 900);
+        addObject(new KeyDisabled(), 1180, 1153);
         setPaintOrder(Hero.class);
         // Initialiseren van de CollisionEngine zodat de speler niet door de tile heen kan lopen.
         // De collision engine kijkt alleen naar de tiles die de variabele solid op true hebben staan.
