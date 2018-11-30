@@ -59,19 +59,17 @@ public class MyWorld extends World {
         // Alle objecten toevoegen aan de wereld: camera, main karakter en mogelijke enemies
         addObject(camera, 0, 0);
         addObject(hero, 197, 314);
-        addObject(new Enemy(), 650, 555);
-        addObject(new Pokermad(), 2102, 900);
-        addObject(new BlueCoin(false), 937, 855);
-        addObject(new PinkCoin(false), 1000, 800);
+        addObject(new Enemy(), 620, 590);
+        addObject(new Pokermad(), 2101, 360);
+        addObject(new BlueCoin(false), 1345, 135);
+        addObject(new PinkCoin(false), 1185, 615);
         addObject(new GreenCoin(false), 1500, 800);
         addObject(new Key(false), 1180, 1153);
         addObject(new ClosedDoorMid(),2800, 1290);
         addObject(new ClosedDoorTop(), 2800, 1240);
-        addObject(new Diamand(false), 1536, 1093);
-        addObject(new Diamand(false), 1700, 1093);
-        addObject(new Diamand(false), 1998 , 913);
-        addObject(new Star(false), 925, 314);
-        addObject(new Star(false), 800, 1100);
+        addObject(new Diamand(false), 2101, 375);
+        addObject(new Star(false), 1227, 135);
+        addObject(new Star(false), 929, 315);
         addObject(new Star(false), 1000, 900);
         addObject(new KeyDisabled(), 1180, 1153);
         setPaintOrder(Hero.class);

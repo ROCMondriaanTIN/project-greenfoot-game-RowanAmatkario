@@ -64,7 +64,7 @@ public class Hero extends Mover {
         for (Actor water : getIntersectingObjects(Water.class)){
             if ( water != null) {
                 getWorld().removeObject(this);
-                Greenfoot.setWorld(new MyWorld());
+                Greenfoot.setWorld(new SelectLevel());
                 return;
             }
         }
@@ -79,7 +79,7 @@ public class Hero extends Mover {
         if(Star != null) { 
             getWorld().removeObject(Star); 
             sb.updateScoreStar();
-            MyWorld world = (MyWorld)getWorld(); 
+            
             
         } 
    
@@ -88,21 +88,21 @@ public class Hero extends Mover {
         if(Key != null) { 
             getWorld().removeObject(Key); 
             sb.updateScoreKey();
-            MyWorld world = (MyWorld)getWorld(); 
+            
         } 
         Actor Diamand = getOneIntersectingObject(Diamand.class); 
 
         if(Diamand != null) { 
             getWorld().removeObject(Diamand); 
             sb.updateScoreDiamand();
-            MyWorld world = (MyWorld)getWorld(); 
+            
         } 
         Actor BlueCoin= getOneIntersectingObject(BlueCoin.class); 
 
         if(BlueCoin != null) { 
             getWorld().removeObject(BlueCoin); 
             sb.updateScoreBlueCoin();
-            MyWorld world = (MyWorld)getWorld(); 
+            
             charCoin ++;
             charStatus = 2;
         } 
@@ -110,7 +110,7 @@ public class Hero extends Mover {
         if(PinkCoin != null) { 
             getWorld().removeObject(PinkCoin); 
             sb.updateScorePinkCoin();
-            MyWorld world = (MyWorld)getWorld(); 
+            
             charCoin ++;
             charStatus = 3;
         }
@@ -118,7 +118,7 @@ public class Hero extends Mover {
         if(GreenCoin != null) { 
             getWorld().removeObject(GreenCoin); 
             sb.updateScoreGreenCoin();
-            MyWorld world = (MyWorld)getWorld(); 
+            
             charCoin ++;
             charStatus = 1;
         }
@@ -155,11 +155,11 @@ public class Hero extends Mover {
 }
 
     public int getWidth() {
-        return getImage().getWidth() - 40;
+        return getImage().getWidth() - 20;
     }
 
     public int getHeight() {
-        return getImage().getHeight() - 40;
+        return getImage().getHeight() - 20;
     }
     public void charSwitch(){
         switch (charStatus) {

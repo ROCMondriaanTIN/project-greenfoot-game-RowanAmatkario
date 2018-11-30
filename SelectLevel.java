@@ -24,6 +24,12 @@ public class SelectLevel extends World
     {
         TitleLetterLevel titleletterlevel = new TitleLetterLevel();
         addObject(titleletterlevel, 716, 357);
+        LetterEen lettereen = new LetterEen();
+        LetterTwee lettertwee = new LetterTwee();
+        addObject(lettereen, 169,321);
+        addObject(lettertwee, 388,321);
+        
+        
       
     }
     public void act()

@@ -21,7 +21,7 @@ public class game_over1 extends Actor
     if (Greenfoot.isKeyDown("space"))
     {
         this.getWorld().removeObject(this);
-        Greenfoot.setWorld(new MyWorld());
+        Greenfoot.setWorld(new SelectLevel());
         
     }    
 }
