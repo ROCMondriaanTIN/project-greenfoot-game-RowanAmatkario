@@ -61,6 +61,7 @@ public class Hero extends Mover {
             }
         
         }
+       
         for (Actor water : getIntersectingObjects(Water.class)){
             if ( water != null) {
                 getWorld().removeObject(this);

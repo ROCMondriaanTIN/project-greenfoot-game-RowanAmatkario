@@ -181,7 +181,14 @@ public class TileFactory {
                 tile = new Tile("spikes.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);      
                 tile.isSolid = true;
                 break;
-          
+          case 31:
+                tile = new Tile("castleHillRight.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);      
+                tile.isSolid = true;
+                break;
+          case 30:
+                tile = new Tile("castleHillLeft2.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);      
+                tile.isSolid = true;
+                break;
            
         
    
