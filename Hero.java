@@ -75,6 +75,13 @@ public class Hero extends Mover {
                 return;
             }
         }  
+        for (Actor spikes : getIntersectingObjects(Spikes.class)){
+            if ( spikes != null) {
+                getWorld().removeObject(this);
+                Greenfoot.setWorld(new SelectLevel());
+                return;
+            }
+        }
         Actor Star = getOneIntersectingObject(Star.class); 
 
         if(Star != null) { 
@@ -156,11 +163,11 @@ public class Hero extends Mover {
 }
 
     public int getWidth() {
-        return getImage().getWidth() - 20;
+        return getImage().getWidth() - 5;
     }
 
     public int getHeight() {
-        return getImage().getHeight() - 20;
+        return getImage().getHeight() - 5;
     }
     public void charSwitch(){
         switch (charStatus) {

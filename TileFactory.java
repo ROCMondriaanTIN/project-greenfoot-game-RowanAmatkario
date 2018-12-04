@@ -69,16 +69,13 @@ public class TileFactory {
                 break;
             case 13:
                 tile = new Tile("signLeft.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
-                tile.isSolid = true;
+                
                 break;
             case 14:
                 tile = new Tile("signRight.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
             
                 break;
-           case 69:
-                tile = new Tile("grassMid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
-                tile.isSolid = true;
-                break;
+        
            case 73:
                 tile = new Tile("grassHillLeft.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
                 tile.isSolid = true;
@@ -91,15 +88,19 @@ public class TileFactory {
                 tile = new Lava("liquidLavaTop_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
                 
                 break;
-           case 75:
+           case 69:
                 tile = new Tile("grassHillRight.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
                 tile.isSolid = true;
                 break;
-           case 74:
+           case 68:
                 tile = new Tile("grassHillLeft2.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
                 tile.isSolid = true;
                 break;
-           case 76:
+           case 67:
+                tile = new Tile("grassHillLeft.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+                tile.isSolid = true;
+                break;
+           case 70:
                 tile = new Tile("grassHillRight2.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
                 tile.isSolid = true;
                 break;
@@ -109,7 +110,7 @@ public class TileFactory {
                 break; 
            case 57:
                 tile = new Tile("signExit.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
-                tile.isSolid = true;
+                
                 break;
            case 59:
                 tile = new Tile("signRight.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
@@ -178,8 +179,8 @@ public class TileFactory {
                 tile.isSolid = true;
                 break;
           case 65:
-                tile = new Tile("spikes.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);      
-                tile.isSolid = true;
+                tile = new Spikes("spikes.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);      
+               
                 break;
           case 31:
                 tile = new Tile("castleHillRight.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);      
