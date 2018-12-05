@@ -19,6 +19,7 @@ public class SelectLevel extends World
         super(1000, 800, 1); 
         
         prepare();
+        
     }
     private void prepare()
     {
@@ -26,8 +27,12 @@ public class SelectLevel extends World
         addObject(titleletterlevel, 716, 357);
         LetterEen lettereen = new LetterEen();
         LetterTwee lettertwee = new LetterTwee();
+        LetterDrie letterdrie = new LetterDrie();
+        LetterVier lettervier = new LetterVier();
         addObject(lettereen, 169,321);
         addObject(lettertwee, 388,321);
+        addObject(letterdrie, 598, 321);
+        addObject(lettervier, 825, 321);
         
         
       

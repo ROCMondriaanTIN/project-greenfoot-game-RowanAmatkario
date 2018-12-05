@@ -82,6 +82,13 @@ public class Hero extends Mover {
                 return;
             }
         }
+        for (Actor ClosedDoorMid : getIntersectingObjects(ClosedDoorMid.class)) {
+            if ( ClosedDoorMid != null) {
+                Greenfoot.setWorld(new LevelDrie());
+                return;
+            }
+        }
+            
         Actor Star = getOneIntersectingObject(Star.class); 
 
         if(Star != null) { 
@@ -130,6 +137,9 @@ public class Hero extends Mover {
             charCoin ++;
             charStatus = 1;
         }
+        
+            
+        
     }
         
     

@@ -79,22 +79,22 @@ public class LevelTwee extends World {
 
         // Alle objecten toevoegen aan de wereld: camera, main karakter en mogelijke enemies
         addObject(camera, 0, 0);
-        addObject(hero, 197, 500);
+        addObject(hero, 162, 1575);
         //addObject(new Enemy(), 650, 555);
-        //addObject(new Pokermad(), 2102, 900);
+        addObject(new Pokermad(), 1000, 900);
         //addObject(new BlueCoin(false), 937, 855);
         //addObject(new PinkCoin(false), 1000, 800);
         //addObject(new GreenCoin(false), 1500, 800);
-        //addObject(new Key(false), 1180, 1153);
-        //addObject(new ClosedDoorMid(),2800, 1290);
-        //addObject(new ClosedDoorTop(), 2800, 1240);
+        addObject(new Key(false), 900, 400);
+        addObject(new ClosedDoorMid(),1100, 446);
+        addObject(new ClosedDoorTop(), 1100, 380);
         //addObject(new Diamand(false), 1536, 1093);
         //addObject(new Diamand(false), 1700, 1093);
         addObject(new Diamand(false), 1791 , 855);
         addObject(new Star(false), 1541, 2355);
         //addObject(new Star(false), 800, 1100);
         //addObject(new Star(false), 1000, 900);
-        addObject(new KeyDisabled(), 1180, 1153);
+        //addObject(new KeyDisabled(), 900, 400);
         setPaintOrder(Hero.class);
         // Initialiseren van de CollisionEngine zodat de speler niet door de tile heen kan lopen.
         // De collision engine kijkt alleen naar de tiles die de variabele solid op true hebben staan.
