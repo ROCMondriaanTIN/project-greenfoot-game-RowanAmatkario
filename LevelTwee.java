@@ -95,6 +95,7 @@ public class LevelTwee extends World {
         //addObject(new Star(false), 800, 1100);
         //addObject(new Star(false), 1000, 900);
         //addObject(new KeyDisabled(), 900, 400);
+        addObject(new Fireball(), 3863,2235);
         setPaintOrder(Hero.class);
         // Initialiseren van de CollisionEngine zodat de speler niet door de tile heen kan lopen.
         // De collision engine kijkt alleen naar de tiles die de variabele solid op true hebben staan.

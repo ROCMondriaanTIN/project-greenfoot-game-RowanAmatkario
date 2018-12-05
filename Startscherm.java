@@ -20,11 +20,16 @@ public class Startscherm extends World
         
         prepare();
     }
+    
     private void prepare()
     {
         TitleLetters titleletters = new TitleLetters();
-        addObject(titleletters, 509, 351);
+        addObject(titleletters, 484, 267);
+        titleletters.setLocation(484, 267);
+        
+        
     }
+
     public void act()
     {
         if (Greenfoot.isKeyDown("enter"))

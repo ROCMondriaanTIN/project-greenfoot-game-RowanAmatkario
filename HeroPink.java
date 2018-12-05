@@ -6,7 +6,7 @@ import greenfoot.*;
  *
  * @author R. Springer
  */
-public class Hero extends Mover {
+public class HeroPink extends Mover {
 
     private final double gravity;
     private final double acc;
@@ -22,7 +22,7 @@ public class Hero extends Mover {
     
     
     
-    public Hero() {
+    public HeroPink() {
         super();
         gravity = 9.8;
         acc = 0.6;
