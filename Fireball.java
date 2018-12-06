@@ -26,6 +26,10 @@ public class Fireball extends Mover {
     public void act() {
         int x = getX();
         int y = getY();
+        velocityX = 0;
+        velocityY = 0;
+        applyVelocity();
+        turn(17);
 
         if (firstAct) {
             firstAct = false;
