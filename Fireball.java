@@ -22,8 +22,6 @@ public class Fireball extends Mover {
         firstAct = true;
         speed = 1;
     }
-   
-        
     @Override
     public void act() {
         int x = getX();
@@ -56,3 +54,6 @@ public class Fireball extends Mover {
     }
 }
 }
+   
+        
+  

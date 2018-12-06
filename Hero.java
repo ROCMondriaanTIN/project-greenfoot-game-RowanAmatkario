@@ -86,7 +86,7 @@ public class Hero extends Mover {
         }
         for (Actor ClosedDoorMid : getIntersectingObjects(ClosedDoorMid.class)) {
             if ( ClosedDoorMid != null) {
-                Greenfoot.setWorld(new LevelDrie());
+                Greenfoot.setWorld(new SelectLevel());
                 return;
             }
         }
