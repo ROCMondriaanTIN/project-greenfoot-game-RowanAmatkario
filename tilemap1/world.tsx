@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.2" tiledversion="1.2.1" name="world" tilewidth="128" tileheight="71" tilecount="74" columns="0">
+<tileset version="1.2" tiledversion="1.2.1" name="world" tilewidth="128" tileheight="71" tilecount="131" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="70" height="70" source="../images/box.png"/>
@@ -222,5 +222,176 @@
  </tile>
  <tile id="73">
   <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/tochLit.png"/>
+ </tile>
+ <tile id="74">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/fence.png"/>
+ </tile>
+ <tile id="75">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/fenceBroken.png"/>
+ </tile>
+ <tile id="76">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sand.png"/>
+ </tile>
+ <tile id="77">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandCenter.png"/>
+ </tile>
+ <tile id="78">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandCenter_rounded.png"/>
+ </tile>
+ <tile id="79">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandCliffLeft.png"/>
+ </tile>
+ <tile id="80">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandCliffLeftAlt.png"/>
+ </tile>
+ <tile id="81">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandCliffRight.png"/>
+ </tile>
+ <tile id="82">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandCliffRightAlt.png"/>
+ </tile>
+ <tile id="83">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandHalf.png"/>
+ </tile>
+ <tile id="84">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandHalfLeft.png"/>
+ </tile>
+ <tile id="85">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandHalfMid.png"/>
+ </tile>
+ <tile id="86">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandHalfRight.png"/>
+ </tile>
+ <tile id="87">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandHillLeft.png"/>
+ </tile>
+ <tile id="88">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandHillLeft2.png"/>
+ </tile>
+ <tile id="89">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandHillRight.png"/>
+ </tile>
+ <tile id="90">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandHillRight2.png"/>
+ </tile>
+ <tile id="91">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandLeft.png"/>
+ </tile>
+ <tile id="92">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandMid.png"/>
+ </tile>
+ <tile id="93">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/sandRight.png"/>
+ </tile>
+ <tile id="94">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snow.png"/>
+ </tile>
+ <tile id="95">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowCenter.png"/>
+ </tile>
+ <tile id="96">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowCenter_rounded.png"/>
+ </tile>
+ <tile id="97">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowCliffLeft.png"/>
+ </tile>
+ <tile id="98">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowCliffLeftAlt.png"/>
+ </tile>
+ <tile id="99">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowCliffRight.png"/>
+ </tile>
+ <tile id="100">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowCliffRightAlt.png"/>
+ </tile>
+ <tile id="101">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowHalf.png"/>
+ </tile>
+ <tile id="102">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowHalfLeft.png"/>
+ </tile>
+ <tile id="103">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowHalfMid.png"/>
+ </tile>
+ <tile id="104">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowHalfRight.png"/>
+ </tile>
+ <tile id="105">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowHillLeft.png"/>
+ </tile>
+ <tile id="106">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowHillLeft2.png"/>
+ </tile>
+ <tile id="107">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowHillRight.png"/>
+ </tile>
+ <tile id="108">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowHillRight2.png"/>
+ </tile>
+ <tile id="109">
+  <image width="5" height="18" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowLedgeLeft.png"/>
+ </tile>
+ <tile id="110">
+  <image width="5" height="18" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowLedgeRight.png"/>
+ </tile>
+ <tile id="111">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowLeft.png"/>
+ </tile>
+ <tile id="112">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowMid.png"/>
+ </tile>
+ <tile id="113">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/snowRight.png"/>
+ </tile>
+ <tile id="114">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stone.png"/>
+ </tile>
+ <tile id="115">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneCenter.png"/>
+ </tile>
+ <tile id="116">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneCenter_rounded.png"/>
+ </tile>
+ <tile id="117">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneCliffLeft.png"/>
+ </tile>
+ <tile id="118">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneCliffLeftAlt.png"/>
+ </tile>
+ <tile id="119">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneCliffRight.png"/>
+ </tile>
+ <tile id="120">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneCliffRightAlt.png"/>
+ </tile>
+ <tile id="121">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneHalf.png"/>
+ </tile>
+ <tile id="122">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneHalfLeft.png"/>
+ </tile>
+ <tile id="123">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneHalfMid.png"/>
+ </tile>
+ <tile id="124">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneHalfRight.png"/>
+ </tile>
+ <tile id="125">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneHillLeft2.png"/>
+ </tile>
+ <tile id="126">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneHillRight2.png"/>
+ </tile>
+ <tile id="127">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneLeft.png"/>
+ </tile>
+ <tile id="128">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneMid.png"/>
+ </tile>
+ <tile id="129">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/stoneWall.png"/>
+ </tile>
+ <tile id="130">
+  <image width="70" height="70" source="../images/platformerGraphicsDeluxeUpdated/platformerGraphicsDeluxeUpdated/Tiles/window.png"/>
  </tile>
 </tileset>

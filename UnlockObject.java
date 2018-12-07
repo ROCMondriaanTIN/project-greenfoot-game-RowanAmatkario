@@ -10,17 +10,17 @@ public class UnlockObject extends Actor
 {
     private int level;
     private int player;
-    private boolean speelbaar;
+    private boolean spelen;
     
-    public UnlockObject(int level, int player, boolean speelbaar){
-        if(speelbaar){
+    public UnlockObject(int level, int player, boolean spelen){
+        if(spelen){
             setImage("hud_2.png");
         }
         else {
             setImage("lock_blue.png");
         }
         this.level = level;
-        this.speelbaar = speelbaar;
+        this.spelen = spelen;
         this.player = player;
     }
     

@@ -8,7 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class SelectLevel extends World
 {
-
+    int level = 1;
+    int MaxLevel = 4;
     /**
      * Constructor for objects of class SelectLevel.
      * 
@@ -35,6 +36,13 @@ public class SelectLevel extends World
         addObject(lettertwee, 388,321);
         addObject(letterdrie, 598, 321);
         addObject(lettervier, 825, 321);
+        for(int i = 0; i < level; i++){
+            
+        }
+        for(int i = level; i < MaxLevel; i++){
+            
+        }
+        
         
         
         
