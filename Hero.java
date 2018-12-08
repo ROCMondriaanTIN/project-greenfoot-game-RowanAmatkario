@@ -89,12 +89,12 @@ public class Hero extends Mover {
                 return;
             }
         }
-        for (Actor ClosedDoorMid : getIntersectingObjects(ClosedDoorMid.class)) {
+        /*for (Actor ClosedDoorMid : getIntersectingObjects(ClosedDoorMid.class)) {
             if ( ClosedDoorMid != null) {
                 Greenfoot.setWorld(new SelectLevel());
                 return;
             }
-        }
+        }*/
             
         Actor Star = getOneIntersectingObject(Star.class); 
 
