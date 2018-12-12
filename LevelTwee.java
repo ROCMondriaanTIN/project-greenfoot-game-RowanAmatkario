@@ -90,7 +90,7 @@ public class LevelTwee extends World {
         addObject(new ClosedDoorTop(), 1100, 380);
         //addObject(new Diamand(false), 1536, 1093);
         //addObject(new Diamand(false), 1700, 1093);
-        addObject(new Diamand(false), 1791 , 855);
+        addObject(new Diamand(false), 1893 , 1815);
         addObject(new Star(false), 1541, 2355);
         //addObject(new Star(false), 800, 1100);
         //addObject(new Star(false), 1000, 900);

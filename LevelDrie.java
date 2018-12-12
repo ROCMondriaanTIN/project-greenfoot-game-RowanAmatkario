@@ -91,13 +91,16 @@ public class LevelDrie extends World {
         addObject(new PinkCoin(false), 1185, 615);
         addObject(new GreenCoin(false), 1500, 800);
         addObject(new Key(false), 1180, 1153);
-        addObject(new ClosedDoorMid(),2800, 1290);
-        addObject(new ClosedDoorTop(), 2800, 1240);
+        addObject(new ClosedDoorMid(),63, 855);
+        addObject(new ClosedDoorTop(),63, 800);
         addObject(new Diamand(false), 2101, 375);
-        addObject(new Star(false), 1227, 135);
-        addObject(new Star(false), 929, 315);
+        addObject(new Star(false), 223, 2115);
+        addObject(new Star(false), 3724, 2475);
         addObject(new Star(false), 1000, 900);
         addObject(new KeyDisabled(), 1180, 1153);
+        addObject(new Fireball(), 685, 2115);
+        addObject(new Fireball(), 1939, 2535);
+        addObject(new Fireball(), 3900, 2475);
         setPaintOrder(Hero.class);
         // Initialiseren van de CollisionEngine zodat de speler niet door de tile heen kan lopen.
         // De collision engine kijkt alleen naar de tiles die de variabele solid op true hebben staan.

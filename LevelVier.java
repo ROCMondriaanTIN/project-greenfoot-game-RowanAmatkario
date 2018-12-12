@@ -93,20 +93,22 @@ public class LevelVier extends World {
 
         // Alle objecten toevoegen aan de wereld: camera, main karakter en mogelijke enemies
         addObject(camera, 0, 0);
-        addObject(hero, 157, 2055);
+        addObject(hero, 87, 2055);
         addObject(new Enemy(), 620, 590);
         addObject(new Pokermad(), 2101, 360);
         addObject(new BlueCoin(false), 1345, 135);
-        addObject(new PinkCoin(false), 1185, 615);
+        addObject(new PinkCoin(false), 5905,1815);
         addObject(new GreenCoin(false), 1500, 800);
         addObject(new Key(false), 1180, 1153);
-        addObject(new ClosedDoorMid(),2800, 1290);
-        addObject(new ClosedDoorTop(), 2800, 1240);
-        addObject(new Diamand(false), 2101, 375);
-        addObject(new Star(false), 1227, 135);
-        addObject(new Star(false), 929, 315);
+        addObject(new ClosedDoorMid(),69, 1104);
+        addObject(new ClosedDoorTop(), 69, 1044);
+        addObject(new Diamand(false), 3747,2715);
+        addObject(new Star(false), 2867, 2535);
+        addObject(new Star(false), 4773,2175);
         addObject(new Star(false), 1000, 900);
         addObject(new KeyDisabled(), 1180, 1153);
+        addObject(new Fireball(), 1501, 2775);
+        addObject(new Fireball(), 1937, 2775);
         setPaintOrder(Hero.class);
         // Initialiseren van de CollisionEngine zodat de speler niet door de tile heen kan lopen.
         // De collision engine kijkt alleen naar de tiles die de variabele solid op true hebben staan.
