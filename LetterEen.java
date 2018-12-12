@@ -15,6 +15,13 @@ public class LetterEen extends Actor
     public void act() 
     {
         click();
+            for (ClosedDoorMid hero : getIntersectingObjects(ClosedDoorMid.class)){
+            if (hero != null) {
+                getWorld().removeObject(this);
+                setImage("hud_2.png");
+                
+    } 
+}
     }    
     private void click()
     {

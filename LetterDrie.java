@@ -15,7 +15,9 @@ public class LetterDrie extends Actor
     public void act() 
     {
         click();
-    }    
+        setImage("lock_red.png");
+    
+    }
     private void click()
     {
         if(Greenfoot.mouseClicked(this))

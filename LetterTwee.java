@@ -15,6 +15,7 @@ public class LetterTwee extends Actor
     public void act() 
     {
         click();
+        setImage("lock_blue.png");
     }    
     private void click()
     {

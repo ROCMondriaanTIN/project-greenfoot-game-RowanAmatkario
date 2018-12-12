@@ -160,123 +160,112 @@ public class Hero extends Mover {
         Actor under = getOneObjectAtOffset(0, getImage().getHeight()/2, Tile.class);
         return under != null;
     }
-    public void Animate(){
-    switch(frame){
-    case 1:
-    setImage("p1_walk01.png");
-    break;
-    case 2:
-    setImage("p1_walk02.png");
-    break;
-    case 3:
-    setImage("p1_walk03.png");
-    break;
-    case 4:
-    setImage("p1_walk04.png");
-    break;
-    case 5 :
-    setImage("p1_walk05.png");
-    case 6 :
-    setImage("p1_walk06.png");
-    break;
-    case 7:
-    setImage("p1_walk07.png");
-    break;
-    case 8 :
-    setImage("p1_walk08.png");
-    case 9 :
-    setImage("p1_walk09.png");
-    break;
-    case 10:
-    setImage("p1_walk10.png");
-    break;
-    case 11:
-    setImage("p1_walk11.png");
     
-    frame=0;
-    break;
-}
-frame++;
-mirrorImage();
-}
-public void AnimateRoze(){
-    switch(frame){
-    case 1:
-    setImage("p3_walk01.png");
-    break;
-    case 2:
-    setImage("p3_walk02.png");
-    break;
-    case 3:
-    setImage("p3_walk03.png");
-    break;
-    case 4:
-    setImage("p3_walk04.png");
-    break;
-    case 5 :
-    setImage("p3_walk05.png");
-    case 6 :
-    setImage("p3_walk06.png");
-    break;
-    case 7:
-    setImage("p3_walk07.png");
-    break;
-    case 8 :
-    setImage("p3_walk08.png");
-    case 9 :
-    setImage("p3_walk09.png");
-    break;
-    case 10:
-    setImage("p3_walk10.png");
-    break;
-    case 11:
-    setImage("p3_walk11.png");
+        
+public void animateRight()
+    {
+        if(frame == 1)
+        {
+        setImage("p_walk01.png");
+        }
+        else if(frame == 2)
+        {
+        setImage("p_walk02.png");
+        }
+       else if(frame == 3)
+        {
+        setImage("p_walk03.png");
+        }
+        else if(frame == 4)
+        {
+        setImage("p_walk04.png");
+        }
+        else if(frame == 5)
+        {
+        setImage("p_walk05.png");
+        }
+        else if(frame == 6)
+        {
+        setImage("p_walk06.png");
+        }
+        else if(frame == 7)
+        {
+        setImage("p_walk07.png");
+        }
+        else if(frame == 8)
+        {
+        setImage("p_walk08.png");
+        }
+        else if(frame == 9)
+        {
+        setImage("p_walk09.png");
+        }
+        else if(frame == 10)
+        {
+         setImage("p_walk10.png");
+        }
+        if(frame == 11)
+        {
+         setImage("p_walk11.png");
+        
+        frame = 1;
+        return;
+        }
+        frame ++;
+    }
+
     
-    frame=0;
-    break;
-}
-frame++;
-mirrorImage();
-}
-public void AnimateBlauw(){
-    switch(frame){
-    case 1:
-    setImage("p2_walk01.png");
-    break;
-    case 2:
-    setImage("p2_walk02.png");
-    break;
-    case 3:
-    setImage("p2_walk03.png");
-    break;
-    case 4:
-    setImage("p2_walk04.png");
-    break;
-    case 5 :
-    setImage("p2_walk05.png");
-    case 6 :
-    setImage("p2_walk06.png");
-    break;
-    case 7:
-    setImage("p2_walk07.png");
-    break;
-    case 8 :
-    setImage("p2_walk08.png");
-    case 9 :
-    setImage("p2_walk09.png");
-    break;
-    case 10:
-    setImage("p2_walk10.png");
-    break;
-    case 11:
-    setImage("p2_walk11.png");
-    
-    frame = 0;
-    break;
-}
-frame++;
-mirrorImage();
-}
+    public void animateLeft()
+    {
+        if(frame == 1)
+        {
+        setImage("p_walk01_.png");
+        }
+        else if(frame == 2)
+        {
+        setImage("p_walk02_.png");
+        }
+        else if(frame == 3)
+        {
+        setImage("p_walk03_.png");
+        }
+        else if(frame == 4)
+        {
+        setImage("p_walk04_.png");
+        }
+        else if(frame == 5)
+        {
+        setImage("p_walk05_.png");
+        }
+        else if(frame == 6)
+        {
+        setImage("p_walk06_.png");
+        }
+        else if(frame == 7)
+        {
+        setImage("p_walk07_.png");
+        }
+        else if(frame == 8)
+        {
+        setImage("p_walk08_.png");
+        }
+        else if(frame == 9)
+        {
+        setImage("p_walk09_.png");
+        }
+        else if (frame == 10)
+        {
+        setImage("p_walk10_.png");
+        }
+        else if (frame == 11)
+        {
+        setImage("p_walk11_.png" );
+        
+        frame = 1;
+        return;
+        }
+        frame ++;
+    }
         
     public void handleInput() {
         if ((Greenfoot.isKeyDown("up"))&&(onGround()== true)) {
