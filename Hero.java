@@ -19,6 +19,9 @@ public class Hero extends Mover {
     public boolean mirror = true;
     public int frame;
     public int getal;
+    public int jumpGreen = 1;
+    public int jumpPink = 2;
+    public int jumpBlue;
     
   
     
@@ -44,6 +47,7 @@ public class Hero extends Mover {
     public void act() {
         handleInput();
         charSwitch();
+        
         
         
         
@@ -302,6 +306,8 @@ public void animateRight()
                     break;
     }
     }
+   
+            
     public void mirrorImage(){
         if (mirror && right){ 
     getImage().mirrorHorizontally();
