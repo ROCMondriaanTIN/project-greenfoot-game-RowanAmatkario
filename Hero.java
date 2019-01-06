@@ -1,5 +1,6 @@
 
 
+
 import greenfoot.*;
 
 /**
@@ -17,11 +18,11 @@ public class Hero extends Mover {
     public static int HudSter = 0;
     public boolean right = true;
     public boolean mirror = true;
+    private int setPlaynumber = 1;
     public int frame;
     public int getal;
-    public int jumpGreen = 1;
-    public int jumpPink = 2;
-    public int jumpBlue;
+    public int springNummer;
+   
     
   
     
@@ -136,6 +137,8 @@ public class Hero extends Mover {
         if(PinkCoin != null) { 
             getWorld().removeObject(PinkCoin); 
             sb.updateScorePinkCoin();
+            getImage().scale(56, 64);
+            
             
             charCoin ++;
             charStatus = 3;
@@ -286,10 +289,14 @@ public void animateRight()
                 animation();
             }
             velocityX = 10;
-    }
+    
+            //if(setPlaynumber == 3) {
+                //getImage.scale(56, 64);
+           // }
+}
 }
 
-    public int getWidth() {
+    int getWidth() {
         return getImage().getWidth() - 5;
     }
 
@@ -299,10 +306,16 @@ public void animateRight()
     public void charSwitch(){
         switch (charStatus) {
             case 1: setImage("p1_stand.png");
+                    getImage().scale(82, 97);
+                    setPlaynumber = -14;
                     break;
             case 2: setImage("p2_stand.png");
+                    getImage().scale(82, 120);
+                    setPlaynumber = -17;
                     break;
             case 3: setImage("p3_stand.png");
+                    getImage().scale(56, 64);
+                    setPlaynumber = -11;
                     break;
     }
     }
