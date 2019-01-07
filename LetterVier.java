@@ -15,7 +15,7 @@ public class LetterVier extends Actor
     public void act() 
     {
         click();
-        setImage("lock_green.png");
+        setImage("hud_gem_blue.png");
     }    
     private void click()
     {
