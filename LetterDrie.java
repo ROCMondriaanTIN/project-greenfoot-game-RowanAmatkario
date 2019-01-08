@@ -15,8 +15,8 @@ public class LetterDrie extends Actor
     public void act() 
     {
         click();
+        if(Hero.level > 2)setImage("hud_3.png");
         setImage("lock_red.png");
-    
     }
     private void click()
     {

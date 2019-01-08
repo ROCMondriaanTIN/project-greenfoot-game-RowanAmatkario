@@ -19,7 +19,6 @@ public class LetterEen extends Actor
             if (hero != null) {
                 getWorld().removeObject(this);
                 setImage("hud_2.png");
-                
     } 
 }
     }    

@@ -12,10 +12,13 @@ public class LetterTwee extends Actor
      * Act - do whatever the LetterTwee wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public LetterTwee(){
+        if(Hero.level > 1)setImage("hud_2.png");
+        else setImage("lock_blue.png");
+    }
     public void act() 
     {
         click();
-        setImage("lock_blue.png");
     }    
     private void click()
     {

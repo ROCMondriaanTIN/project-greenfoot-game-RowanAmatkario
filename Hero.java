@@ -16,6 +16,7 @@ public class Hero extends Mover {
     GreenfootImage[] images = new GreenfootImage[11];
     int imageNumber;
     public static int HudSter = 0;
+    public static int level;
     public boolean right = true;
     public boolean mirror = true;
     private int setPlaynumber = 1;
@@ -115,7 +116,15 @@ public class Hero extends Mover {
         if(Key != null) { 
             getWorld().removeObject(Key); 
             sb.updateScoreKey();
-            
+            switch(level){
+            case 1:
+                Hero.level = 2;
+            case 2:
+                Hero.level = 3;
+            case 3:
+                Hero.level = 4;
+            case 4:     
+        }
         } 
         Actor Diamand = getOneIntersectingObject(Diamand.class); 
 
@@ -167,8 +176,8 @@ public class Hero extends Mover {
         Actor under = getOneObjectAtOffset(0, getImage().getHeight()/2, Tile.class);
         return under != null;
     }
-    
-        
+   
+ 
 public void animateRight()
     {
         if(frame == 1)
