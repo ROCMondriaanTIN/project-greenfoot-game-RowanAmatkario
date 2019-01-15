@@ -64,9 +64,9 @@ public class MyWorld extends World {
         addObject(hero, 254, 870);
         addObject(new Enemy(), 637, 1130);
         addObject(new Pokermad(), 1871, 1155);
-        addObject(new BlueCoin(false), 1357, 135);
+        addObject(new BlueCoin(false), 2763, 855);
         addObject(new PinkCoin(false), 1231, 675);
-        addObject(new GreenCoin(false), 2763, 855);
+        addObject(new GreenCoin(false), 1656, 1169);
         addObject(new Key(false), 1180, 1153);
         addObject(new ClosedDoorMid(),3205, 390);
         addObject(new ClosedDoorTop(), 3205, 340);

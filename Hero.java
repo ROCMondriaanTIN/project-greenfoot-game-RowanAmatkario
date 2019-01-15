@@ -10,8 +10,8 @@ import greenfoot.*;
 public class Hero extends Mover {
 
     private final double gravity;
-    private final double acc;
-    private final double drag;
+    private double acc;
+    private double drag;
     private int charStatus = 1;
     GreenfootImage[] images = new GreenfootImage[11];
     int imageNumber;
@@ -23,6 +23,8 @@ public class Hero extends Mover {
     public int frame;
     public int getal;
     public int springNummer;
+    private int walkLinks = -10;
+    private int walkRechts = 10;
    
     
   
@@ -315,16 +317,22 @@ public void animateRight()
     public void charSwitch(){
         switch (charStatus) {
             case 1: setImage("p1_stand.png");
-                    getImage().scale(82, 97);
+                    getImage().scale(81, 87);
                     setPlaynumber = -14;
+                    acc = 0.6;
+                    drag = 0.6;
                     break;
             case 2: setImage("p2_stand.png");
-                    getImage().scale(82, 120);
+                    getImage().scale(82, 100);
                     setPlaynumber = -17;
+                    acc = 1.0;
+                    drag = 0.6;
                     break;
             case 3: setImage("p3_stand.png");
                     getImage().scale(56, 64);
                     setPlaynumber = -11;
+                    acc = 0.9;
+                    drag = 0.2;
                     break;
     }
     }
